@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f23f3c;
+  --color-secondary: #f9f8e6;
+  --font-merriweather: "Merriweather", ui-sans-serif, system-ui, sans-serif;
+  --font-sans:
+    var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+input {
+  outline: none;
+}
+
+select {
+  appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+html {
+  @apply bg-primary;
+}
