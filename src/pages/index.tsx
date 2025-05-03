@@ -380,7 +380,7 @@ const renderCG = (pastoralTeam: string, small_team: string) => {
       ],
       South: ["CYC 35 J - Thiam Yew Mun", "CYC 16 J - Soon Mei Shi"],
       East: [
-        "CYC 21 J - Emily Him Ming Li",
+        "CYC 21 J - Emily Him Min Li",
         "CYC 04 J - Evan Yap Kam Seng",
         "CYC 111 J - Lie Wen Si",
         "CYC 116 J - Lau Yiew Ming",
@@ -392,7 +392,7 @@ const renderCG = (pastoralTeam: string, small_team: string) => {
       "Central (Denise)": [
         "CYC 22 T - Elaine Teoh EngYin",
         "CYC 75 T - Lai Jia En",
-        "CYC 100 T - Jason Mak Kah Chun",
+        "CYC 100 T - Shum Wai Lok",
       ],
       North: [
         "CYC 24 T - Jasmine Tang Hay Yuet",
@@ -403,7 +403,7 @@ const renderCG = (pastoralTeam: string, small_team: string) => {
       South: ["CYC 15 T - Chong You You"],
       "Working Adult": [
         "CYC 44 T - Wong How Han",
-        "CYC 46 T - Fong Chung Sang",
+        "CYC 46 T - Yap Ai Ling",
         "CYC 107 T - Gilbert Hu Chang Hou",
       ],
     },
