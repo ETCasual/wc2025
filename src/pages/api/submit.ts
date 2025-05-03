@@ -16,6 +16,7 @@ const SubmitRegistration = async (
       contact_number,
       pastoral_status,
       pastoral_team,
+      cg,
       sessions,
       small_team,
     } = JSON.parse(req.body as string) as Forms;
@@ -29,6 +30,7 @@ const SubmitRegistration = async (
       pastoral_status: pastoral_status.trim(),
       pastoral_team: pastoral_team.trim(),
       small_team: small_team.trim(),
+      cg: cg.trim(),
       sessions,
     };
 
@@ -70,6 +72,7 @@ const SubmitRegistration = async (
               trimmedData.pastoral_status,
               trimmedData.pastoral_team,
               trimmedData.small_team,
+              trimmedData.cg,
               newSessions.join(", "),
             ],
           ],
