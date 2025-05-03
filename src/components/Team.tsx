@@ -28,11 +28,19 @@ export const PastoralTeam: React.FC<PastoralTeamProps> = ({ name, error }) => {
           onChange={async (e) => {
             await setFieldValue(name, e.target.value);
 
-            const haveSmallTeam =
-              e.target.value === "KL Teens" ||
-              e.target.value === "KL Youth" ||
-              e.target.value === "USJ";
-            await setFieldValue("small_team", haveSmallTeam ? "" : "-");
+            const defaultSmallTeam = {
+              "KL Teens": "Central (XK)",
+              "KL Youth": "Central (XK)",
+              USJ: "Knight Warrior",
+              "Ps. Joshua Team": "Ps. Joshua Team",
+              "Mei Jing Team": "Mei Jing Team",
+              Serdang: "Serdang",
+            };
+
+            await setFieldValue(
+              "small_team",
+              defaultSmallTeam[e.target.value as keyof typeof defaultSmallTeam],
+            );
           }}
           disabled={isSubmitting}
           className={`font-merriweather ${value ? "text-secondary" : "text-secondary/50"} placeholder:text-secondary/50 text-secondary w-full px-2 text-sm capitalize focus:outline-none`}

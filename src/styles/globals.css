@@ -25,3 +25,13 @@ select {
 html {
   @apply bg-primary;
 }
+
+.t-s {
+  -webkit-text-fill-color: #f23f3c;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #f9f8e6;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #f23f3c;
+}

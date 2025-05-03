@@ -10,6 +10,7 @@ export type Forms = {
   pastoral_team: string;
   small_team: string;
   sessions: string[];
+  cg: string;
 };
 
 export const schema = Yup.object<Forms>().shape({
@@ -35,6 +36,7 @@ export const schema = Yup.object<Forms>().shape({
   small_team: Yup.string()
     .required("Small team is required")
     .min(1, "Small team is required"),
+  cg: Yup.string().required("CG is required").min(1, "CG is required"),
   sessions: Yup.array()
     .of(Yup.string())
     .min(1, "At least one session must be selected")

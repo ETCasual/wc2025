@@ -10,8 +10,9 @@ type SelectProps = {
 export const Select: React.FC<SelectProps> = ({ name, options, chiLabel }) => {
   const { setFieldValue, values, errors, isSubmitting } =
     useFormikContext<Forms>();
-  const value = values.small_team;
-  const error = errors.small_team;
+  const value = values[name as keyof Forms];
+  const error = errors[name as keyof Forms];
+
   return (
     <div className="flex w-full flex-col items-center gap-1">
       <div className="border-secondary flex w-full flex-row items-center overflow-hidden rounded-full border-2">
@@ -20,7 +21,7 @@ export const Select: React.FC<SelectProps> = ({ name, options, chiLabel }) => {
             htmlFor=""
             className="font-merriweather text-primary h-full text-xs capitalize"
           >
-            {name.replaceAll("_", " ")}
+            {name === "cg" ? "CG" : name.replaceAll("_", " ")}
           </label>
         </div>
 
@@ -30,12 +31,16 @@ export const Select: React.FC<SelectProps> = ({ name, options, chiLabel }) => {
           value={value}
           onChange={async (e) => {
             await setFieldValue(name, e.target.value);
+
+            if (name === "small_team") {
+              await setFieldValue("cg", "");
+            }
           }}
           disabled={isSubmitting}
           className={`font-merriweather ${value ? "text-secondary" : "text-secondary/50"} placeholder:text-secondary/50 text-secondary w-full px-2 text-sm capitalize focus:outline-none`}
         >
           <option value="" disabled>
-            Select {name.replaceAll("_", " ")}
+            Select {name === "cg" ? "CG" : name.replaceAll("_", " ")}
           </option>
           {options.map((option) => (
             <option key={option} value={option}>
