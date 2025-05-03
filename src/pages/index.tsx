@@ -417,15 +417,14 @@ const renderCG = (pastoralTeam: string, small_team: string) => {
     },
     USJ: {
       "Knight Warrior": [
-        "CYC (U) 02 S - Lim Xin Ru",
-        "CYC (U) 06 J (A) - Wong Kar Shean",
-        "CYC (U) 06 J (B) - Eason Teng",
+        "CYC (U) 02 S - Eason Teng",
+        "CYC (U) 06 S - Cheang Wen Ching",
       ],
       "Mighty Warrior": [
         "CYC (U) 03 S - Ng Mei Mei",
         "CYC (U) 15 S - Chio Shu Xuan",
         "CYC (U) 11 S - Tan Guan Hong",
-        "CYC (U) 13 J - Lim Zhi Tong",
+        "CYC (U) 13 S - Chung Zheng Yuan",
       ],
     },
     "Mei Jing Team": {
