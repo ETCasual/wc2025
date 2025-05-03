@@ -73,8 +73,8 @@ export default function Home() {
             });
 
             if (res.ok) {
-              alert("Registered!");
               await incrementCounter(1);
+              alert("Registered!");
               action.resetForm();
               setPage(1);
               action.setSubmitting(false);
