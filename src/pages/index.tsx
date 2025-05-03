@@ -183,7 +183,7 @@ export default function Home() {
                       onClick={async () => {
                         const formErrors = await validateForm();
                         console.log(formErrors);
-                        if (formErrors.small_team) {
+                        if (formErrors.small_team || formErrors.cg) {
                           return;
                         }
                         setPage(3);
