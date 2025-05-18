@@ -432,7 +432,7 @@ const renderCG = (pastoralTeam: string, small_team: string) => {
         "CYC (U) 03 S - Ng Mei Mei",
         "CYC (U) 15 S - Chio Shu Xuan",
         "CYC (U) 11 S - Tan Guan Hong",
-        "CYC (U) 13 S - Chung Zheng Yuan",
+        "CYC (U) 13 S - Toh Kar Wei",
       ],
     },
     "Mei Jing Team": {
