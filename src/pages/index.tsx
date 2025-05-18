@@ -288,8 +288,12 @@ export default function Home() {
                         </div>
                       </div>
                     </div>
+                    <p className="w-full pr-2 text-end text-[10px] text-white italic">
+                      You can only select Youth Alive after registration
+                      deadline.
+                    </p>
                     {errors.sessions && (
-                      <p className="w-full pr-2 text-end text-[10px] text-white italic">
+                      <p className="-mt-1 w-full pr-2 text-end text-[10px] text-white italic">
                         {errors.sessions}
                       </p>
                     )}

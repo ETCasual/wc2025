@@ -39,6 +39,6 @@ export const schema = Yup.object<Forms>().shape({
   cg: Yup.string().required("CG is required").min(1, "CG is required"),
   sessions: Yup.array()
     .of(Yup.string())
-    .min(1, "You can only select Youth Alive after registration deadline.")
-    .required("You can only select Youth Alive after registration deadline."),
+    .min(1, "At least one session must be selected")
+    .required("At least one session must be selected"),
 });
