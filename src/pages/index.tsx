@@ -9,7 +9,7 @@ import { PastoralStatus } from "@/components/Pastoral";
 import { PastoralTeam } from "@/components/Team";
 import { useState } from "react";
 import { Select } from "@/components/Select";
-import { useFirestoreDocData, useFirestore } from "reactfire";
+import { useFirestore } from "reactfire";
 import { updateDoc, doc, increment } from "firebase/firestore";
 
 export default function Home() {
@@ -209,6 +209,7 @@ export default function Home() {
                           </p>
                           <label className="flex w-full flex-row items-center">
                             <Field
+                              disabled
                               type="checkbox"
                               name="sessions"
                               value="Session 1"
@@ -228,6 +229,7 @@ export default function Home() {
 
                           <label className="flex flex-row items-center">
                             <Field
+                              disabled
                               type="checkbox"
                               name="sessions"
                               value="Session 2"
@@ -242,6 +244,7 @@ export default function Home() {
 
                           <label className="flex flex-row items-center">
                             <Field
+                              disabled
                               type="checkbox"
                               name="sessions"
                               value="Talk Show"
@@ -260,6 +263,7 @@ export default function Home() {
                               name="sessions"
                               value="Session 3"
                               className="mr-3"
+                              disabled
                             />
                             <div className="flex w-[90px] flex-row items-center justify-between">
                               <p>02:30pm</p>
