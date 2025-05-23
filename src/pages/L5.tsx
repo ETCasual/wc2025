@@ -47,13 +47,24 @@ export default function HomePage() {
         alt="qr"
       /> */}
 
-      <div className="absolute top-[7.5%] left-[12%] z-50 flex flex-col items-center text-[90px] text-white">
+      <div
+        style={{
+          opacity: data.hide ? "0" : "1",
+        }}
+        className="absolute top-[7.5%] left-[12%] z-50 flex flex-col items-center text-[90px] text-white transition-opacity duration-300"
+      >
         Agree 同意
         <div className="w-full max-w-[300px] rounded-2xl border-[10] border-white bg-blue-500 pt-2.5 pb-1 text-center text-[150px] leading-[1.1]">
           {data?.agree}
         </div>
       </div>
-      <div className="absolute top-[7.5%] right-[10%] z-50 flex flex-col items-center text-[90px] text-white">
+
+      <div
+        style={{
+          opacity: data.hide ? "0" : "1",
+        }}
+        className="absolute top-[7.5%] right-[10%] z-50 flex flex-col items-center text-[90px] text-white transition-opacity duration-300"
+      >
         Disagree 不同意
         <div className="w-full max-w-[300px] rounded-2xl border-[10] border-white bg-[magenta] pt-2.5 pb-1 text-center text-[150px] leading-[1.1]">
           {data?.disagree}
