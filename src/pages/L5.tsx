@@ -19,13 +19,6 @@ export default function HomePage() {
       className={`${bebas.className} relative min-h-[1000px] min-w-[4000px] overflow-hidden bg-[url(/BG.jpg)] [--stacks:3]`}
     >
       <Image
-        src="/S1_Q1.png"
-        className="absolute top-0 left-0 z-20 h-full w-full object-cover"
-        alt="bg"
-        width={4000}
-        height={1000}
-      />
-      <Image
         src="/L5.jpg"
         className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
         alt="bg"
