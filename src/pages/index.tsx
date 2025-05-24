@@ -5,8 +5,8 @@ import { updateDoc, doc, increment } from "firebase/firestore";
 import { useVote } from "@/store/useVote";
 
 const display = {
-  agree: "同意",
-  disagree: "不同意",
+  agree: "Yes",
+  disagree: "No",
 };
 
 export default function Home() {
