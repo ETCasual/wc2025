@@ -19,7 +19,7 @@ export default function HomePage() {
       className={`${bebas.className} relative min-h-[1000px] min-w-[4000px] overflow-hidden bg-[url(/BG.jpg)] [--stacks:3]`}
     >
       {/* <Image
-        src="/Example_Question.png"
+        src="/S1_Q1.png"
         className="absolute top-0 left-0 z-20 h-full w-full object-cover"
         alt="bg"
         width={4000}
@@ -53,7 +53,7 @@ export default function HomePage() {
         }}
         className="absolute top-[7.5%] left-[12%] z-50 flex flex-col items-center text-[90px] text-white transition-opacity duration-300"
       >
-        Agree 同意
+        Yes
         <div className="w-full max-w-[300px] rounded-2xl border-[10] border-white bg-blue-500 pt-2.5 pb-1 text-center text-[150px] leading-[1.1]">
           {data?.agree}
         </div>
@@ -65,7 +65,7 @@ export default function HomePage() {
         }}
         className="absolute top-[7.5%] right-[10%] z-50 flex flex-col items-center text-[90px] text-white transition-opacity duration-300"
       >
-        Disagree 不同意
+        No
         <div className="w-full max-w-[300px] rounded-2xl border-[10] border-white bg-[magenta] pt-2.5 pb-1 text-center text-[150px] leading-[1.1]">
           {data?.disagree}
         </div>

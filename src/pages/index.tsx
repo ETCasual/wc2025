@@ -71,13 +71,13 @@ export default function Home() {
               className="rounded-lg bg-green-300 px-4 py-5"
               onClick={() => uploadSelection("agree")}
             >
-              Agree 同意
+              Yes
             </button>
             <button
               className="rounded-lg bg-red-300 px-4 py-5"
               onClick={() => uploadSelection("disagree")}
             >
-              Disagree 不同意
+              No
             </button>
           </div>
         </div>
